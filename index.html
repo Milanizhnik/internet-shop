@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tovarovoz</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="stylesheets/styles.css" type="text/css" rel="stylesheet" >
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+
+	<nav class="navbar navbar-default">
+  <div class="container">
+  	<div class="row">
+	<div class="col-xs-12 col-sm-4 col-lg-3 no-padding-right">
+<div class="row">
+	<div class="col-xs-6 col-sm-12">
+		<a class="navbar-brand" href="index.html">
+		<img src="img/logo.png" alt="" class="hidden-xs">
+		<img src="img/logo-sm.png" alt="" class="visible-xs">
+		</a>
+	</div>
+	<div class="col-xs-6">
+	<div class="basket-area-small">
+		<a href="/cart" target="_self" class="basket empty">
+			<span class="cart-price" id="cartPrice-no-items">Корзина пуста</span>
+		</a>
+		<a href="/cart" target="_self" class="basket full">
+			<span class="cart-price" id="cartPrice-items">В корзине <span class="product-count">1 </span><span class="text-to-change">товар </span></span></a>
+			<div class="order">
+				<p><span class="text-to-change-2">Один товар </span> на сумму &nbsp; &nbsp; &nbsp; <span class="sum">13 948 грн</span></p>
+				<button class="make-order">Оформить заказ</button>
+			</div>	
+	</div>
+	</div>
+</div>
+</div>
+	<div class="col-xs-12 col-sm-7 col-sm-offset-1 col-lg-7 col-lg-offset-2">
+	<div class="navbar-contacts">
+    	<div class="telephone">044 232-91-55</div>
+		<div class="address">г.Киев, ул.Васильковская 1, оф.2</div>
+		<div class="lang">
+			<a href="">укр</a>|
+			<a href="" class="active">рус</a>|
+			<a href="">eng</a>
+		</div>
+	</div>
+	<div class="search-small">
+		<form action="action_page.php" method="GET" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<input type="search" name="somesearch" placeholder="Поиск">
+  		<input type="submit" value="Найти">
+		</form>
+	</div>
+	<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tog-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+	<div class="collapse navbar-collapse" id="tog-menu">
+      	<ul class="nav navbar-nav">
+        	<li><a href="about.html">О нас</a></li>
+        	<li><a href="delivery-payment-1.html">Доставка</a></li>
+        	<li><a href="delivery-payment-2.html">Оплата</a></li>
+        	<li><a href="#support">Поддержка</a></li>
+        	<li><a href="#contacts">Контакты</a></li>
+        	<li><a href="#cabinet">Личный кабинет</a></li>
+		</ul>
+		<a href="" class="cross">X</a>
+	</div>
+	</div>
+	</div>
+  	</div>
+	</nav>
+</header>
+<main>
+	<div class="container">
+	<section id="two-column">
+	<div class="row">
+	<aside id="widget-area" class="col-sm-3">
+		<div class="catalog home-page">
+			<ul class="catalog-list">
+				<li class="dropdown list-head-2 open"><span class="catalog-title"> Каталог товаров</span>
+					<ul class="dropdown-menu first-level home-page">
+				<li class="dropdown active"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Компьютерная и офисная техника</a>
+					<div class="advertise-wrap">
+					<span class="advertise"><img src="img/tablet-big.png" alt=""></span>
+					<ul class="dropdown-menu second-level">
+						<li><a href="">Мини-ПК и тонкие клиенты <span class="caret-right"></span></a></li>
+						<li><a href="">Настольные ПК</a></li>
+						<li><a href="">Аксессуары для ПК<span class="caret-right"></span></a></li>
+						<li><a href="">Комплектующие<span class="caret-right"></span></a></li>
+						<li><a href="">Ноутбуки, нетбуки и аксессуары</a></li>
+						<li class="dropdown dropdown-submenu active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Планшеты и аксессуары<span class="caret-right"></span></a>
+							<ul class="dropdown-menu third-level">
+								<li class="active"><a href="kategory.html">Планшеты</a></li>
+								<li><a href="">Аксессуары для планшетов</a></li>
+							</ul>
+						</li>
+						<li><a href="">Электронные книги</a></li>
+						<li><a href="">Мультимедиа<span class="caret-right"></span></a></li>
+						<li><a href="">Сумки и чехлы<span class="caret-right"></span></a></li>
+						<li><a href="">Серверное оборудование и СХД<span class="caret-right"></span></a></li>
+						<li><a href="">Внешние диски и флеш-накопители<span class="caret-right"></span></a></li>
+						<li><a href="">Принтеры, сканеры, факсы и МФУ<span class="caret-right"></span></a></li>
+						<li><a href="">Сетевое оборудование<span class="caret-right"></span></a></li>
+						<li><a href="">Мониторы</a></li>
+					</ul>
+					<a href="" class="advertise-link"></a>
+				</div>
+				</li>
+				<li><a href="">Торговое оборудование</a></li>
+				<li><a href="">Бытовая техника</a></li>
+				<li><a href="">Телефония</a></li>
+				<li><a href="">Программное обеспечение</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="catalog-small">
+			<ul class="catalog-list panel-group">
+				<li class="panel panel-default active"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="first">Компьютерная и офисная техника</a>
+					<ul id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+						<li><a href="">Мини-ПК и тонкие клиенты </a></li>
+						<li><a href="">Настольные ПК</a></li>
+						<li><a href="">Аксессуары для ПК</a></li>
+						<li><a href="">Комплектующие</a></li>
+						<li><a href="">Ноутбуки, нетбуки и аксессуары</a></li>
+						<li class="active"><a href="kategory.html">Планшеты и аксессуары</a></li>
+						<li><a href="">Электронные книги</a></li>
+						<li><a href="">Мультимедиа</a></li>
+						<li><a href="">Сумки и чехлы</a></li>
+						<li><a href="">Серверное оборудование и СХД</a></li>
+						<li><a href="">Внешние диски и флеш-накопители</a></li>
+						<li><a href="">Принтеры, сканеры, факсы и МФУ</a></li>
+						<li><a href="">Сетевое оборудование</a></li>
+						<li><a href="">Мониторы</a></li>
+					</ul></li>
+				<li class="panel panel-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="first">Торговое оборудование</a>
+				<ul id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+				</ul>
+				</li>
+				<li class="panel panel-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="#collapseThree" class="first">Бытовая техника</a>
+				<ul id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+				</ul>
+				</li>
+				<li class="panel panel-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="#collapseFour" class="first">Телефония</a>
+				<ul id="collapseFour" class="panel-collapse collapse" role="tabpanel">
+				</ul>
+				</li>
+				<li class="panel panel-default"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="first">Программное обеспечение</a>
+				<ul id="collapseFive" class="panel-collapse collapse" role="tabpanel">
+				</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="banner">
+			<a href=""><img src="img/banner.jpg" alt=""></a>
+		</div>
+		<div class="news-sidebar">
+			<h3>Новости</h3>
+			<ul class="news-list">
+				<li><span class="in-img"><img src="img/news-1.png"></span><span class="in-link"><a href="">Что такое 3D принтер?</a></span></li>
+				<li><span class="in-img"><img src="img/news-2.png"></span><span class="in-link"><a href="">Победитель номинации "Лучшее качество"</a></span></li>
+				<li><span class="in-img"><img src="img/news-3.png"></span><span class="in-link"><a href="">Смартфоны рулят</a></span></li>
+				<li><span class="in-img"><img src="img/news-4.png"></span><span class="in-link"><a href="">Крепление Tertax XWAY для навигаторов</a></span></li>
+				<li><span class="in-img"><img src="img/news-5.png"></span><span class="in-link"><a href="">Ivy Bridge - процессор для Ultrabook</a></span></li>
+				<li><a href="" class="all">Все статьи...</a></li>
+			</ul>
+		</div>
+	</aside>
+<section id="content" class="col-xs-12 col-sm-9">
+	<div class="secondary-widget-area">
+	<div class="search">
+		<form action="action_page.php" method="GET" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<input type="search" name="somesearch" placeholder="Поиск">
+  		<input type="submit" value="Найти">
+		</form>
+	</div>
+	<div class="basket-area">
+		<a href="#" target="_self" class="basket empty">
+			<span class="cart-price" id="cartPrice-no-items">Корзина пуста</span>
+		</a>
+		<a href="#" target="_self" class="basket full">
+			<span class="cart-price" id="cartPrice-items">В корзине <span class="product-count">1 </span><span class="text-to-change">товар </span></span></a>
+			<div class="order">
+				<p><span class="text-to-change-2">Один товар </span> на сумму &nbsp; &nbsp; &nbsp; <span class="sum">13 948 грн</span></p>
+				<button class="make-order" onclick="location.href='delivery-payment-1.html'">Оформить заказ</button>
+			</div>	
+		
+	</div>
+		<div style="clear:both"></div>
+		<div class="slider">
+			<div id="carousel-1" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-1" data-slide-to="1"></li>
+    <li data-target="#carousel-1" data-slide-to="2"></li>
+    <li data-target="#carousel-1" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href=""><img src="img/slider-img.jpg" alt="..." width="820" height="240"></a>
+    </div>
+    <div class="item">
+        <a href=""><img src="img/slider-img.jpg" alt="..." width="820" height="240"></a>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>		
+<section class="items">
+	<div class="row">
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-1.png"><p>Мясорубки</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-2.png"><p>Сенсорные мониторы</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-3.png"><p>Мониторы</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-4.png"><p>Телефоны</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-5.png"><p>Пылессосы</p></a></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-6.png"><p>Ноутбуки</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-7.png"><p>Принтеры</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-8.png"><p>Стиральные машины</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-9.png"><p>ПО</p></a></div>
+		<div class="col-sm-15 col-md-15 col-lg-15"><a href="" class="item-cat"><img src="img/item-10.png"><p>Чайники</p></a></div>
+	</div>	
+</section>
+</section>
+	</div>
+	</section>
+<section class="leaders">
+	<div class="row padding">
+		<div class="section-header"><h2>Лидеры продаж</h2></div>	
+			<div class="col-sm-2 col-xs-6 leader">
+				<div class="large-tile">
+					<div class="middle-tile">
+				<div class="tile-data"> 
+					<div class="tile-img"><a href=""><img src="img/item-1.png" alt="" ></a></div>
+					<div class="tile-title"><a href="">Мясорубка Bosch</a></div>
+				</div>
+		<button class="btn price"><span class="sum"><span class="cap">1 560</span>грн</span><span class="price-img"></span></button>
+				</div>
+		<div class="tile-description">
+			<p>Планшет Apple A1489 iPadAir with Retina display Wi-Fi 32GB Silver; Процессор: мощный Dual-core Apple A7 с 64-битной архитектурой и сопроцессор движения М7. Память: 16ГБ</p>
+		</div>
+		</div>
+		</div>
+			<div class="col-sm-2 col-xs-6 leader">
+				<div class="large-tile">
+					<div class="middle-tile">
+				<div class="tile-data"> 
+				<div class="tile-img"><a href=""><img src="img/item-2.png" alt="" ></a></div>
+				<div class="tile-title"><a href="">Сенсорный монитор безрамочная конструкция SPARK-TM-2115.2P3</a></div>
+				</div>
+		<button class="btn price"><span class="sum"><span class="cap">3 697</span>грн</span><span class="price-img"></span></button>
+					</div>
+		<div class="tile-description">
+		</div>
+			</div>
+		</div>
+			<div class="col-sm-2 col-xs-6 leader">
+				<div class="large-tile">
+				<div class="middle-tile">
+					<div class="tile-data"> 
+					<div class="tile-img"><a href=""><img src="img/item-3.png" alt="" ></a></div>
+					<div class="tile-title"><a href="">Монитор PHILIPS 193V5LSB2</a></div>
+					</div>
+			<button class="btn price"><span class="sum"><span class="cap">17 890</span>грн</span><span class="price-img"></span></button>
+			</div>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>
+			<div class="col-sm-2 col-xs-6 leader">
+			<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-4.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Проводной телефон Panasonic KX-TS2350UAS</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">1 800</span>грн</span><span class="price-img"></span></button>
+			</div>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>
+			<div class="col-sm-2 col-xs-6 leader">
+			<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-9.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Программное обеспечение Kaspersky Internet Security 2015 Multi-Device 2-Device 1</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">845</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>
+		</div>
+			<div class="col-sm-2 col-xs-6 leader">
+			<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-5.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Пылесос LG VK69462N безмешковый</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">2 130</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>
+			</div>
+		</section>
+			<section class="news">
+				<div class="row padding">
+			<div class="section-header"><h2>Новинки</h2></div>
+			<div class="col-sm-2 col-xs-6 new">
+				<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-10.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Чайник Bosch MFW 1501</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">1 560</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>
+			<div class="col-sm-2 col-xs-6 new">
+				<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-6.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Ноутбук Samsung VK69462N</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">3 697</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>
+			<div class="col-sm-2 col-xs-6 new">
+			<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-8.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Стиральная машина PHILIPS 193V5LSB2</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">17 890</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>	
+			<div class="col-sm-2 col-xs-6 new">
+				<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-7.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Принтер  лазерный Panasonic KX-TS235UAS</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">1 800</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>
+			<div class="col-sm-2 col-xs-6 new">
+				<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-1.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Мясорубка Bosch MFW 1501</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">845</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>
+			<div class="col-sm-2 col-xs-6 new">
+				<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+			<div class="tile-img"><a href=""><img src="img/item-2.png" alt="" ></a></div>
+			<div class="tile-title"><a href="">Сенсорный монитор безрамочная конструкция SPARK-TM-2115.2P3</a></div>
+		</div>
+		<button class="btn price"><span class="sum"><span class="cap">2 130</span>грн</span><span class="price-img"></span></button>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>	
+			</div>
+				</div>
+	</section>
+		<section class="sales">
+			<div class="section-header"><h2>Акции</h2></div>
+			<div class="row">
+			<div id="carousel-abc" class="carousel slide" data-ride="carousel">
+ 
+  <!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+    	<div class="row padding">
+        	<div class="col-xs-6 sale">
+        		<div class="large-tile">
+					<div class="sale-middle-tile">
+						<div class="tile-data"> 
+		<div class="label label-day">Цена дня</div>
+		<div class="tile-img"><a href=""><img src="img/item-11.png" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Acer Switch10 SW5-012</a></div>
+						</div>
+		<button class="btn price"><span class="sum"><span class="cap">2 130</span>грн</span><span class="price-img"></span></button>
+					</div>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>
+			<div class="col-xs-6 sale">
+				<div class="large-tile">
+					<div class="sale-middle-tile">
+						<div class="tile-data"> 
+		<div class="label label-big">BIG SALE</div>
+		<div class="tile-img"><a href=""><img src="img/item-9.png" alt=""></a></div>
+		<div class="tile-title"><a href="">Программное обеспечение Kaspersky Internet Security 2015 Multi-Device 2-Device </a></div>
+						</div>
+		<button class="btn price"><span class="sum"><span class="cap">2 130</span>грн</span><span class="price-img"></span></button>
+					</div>
+		<div class="tile-description">
+		</div>
+		</div>
+	    </div>
+	</div>
+	</div>
+    <div class="item">
+    	<div class="row padding">
+        	<div class="col-xs-6 sale">
+        		<div class="large-tile">
+					<div class="sale-middle-tile">
+						<div class="tile-data"> 
+		<div class="label label-day">Цена дня</div>
+		<div class="tile-img"><a href=""><img src="img/item-11.png" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Acer Switch10 SW5-012</a></div>
+						</div>
+		<button class="btn price"><span class="sum"><span class="cap">2 130</span>грн</span><span class="price-img"></span></button>
+					</div>
+		<div class="tile-description">
+		</div>
+		</div>
+		</div>
+			<div class="col-xs-6 sale">
+				<div class="large-tile">
+					<div class="sale-middle-tile">
+						<div class="tile-data"> 
+		<div class="label label-big">BIG SALE</div>
+		<div class="tile-img"><a href=""><img src="img/item-9.png" alt=""></a></div>
+		<div class="tile-title"><a href="">Программное обеспечение Kaspersky Internet Security 2015 Multi-Device 2-Device </a></div>
+						</div>
+		<button class="btn price"><span class="sum"><span class="cap">2 130</span>грн</span><span class="price-img"></span></button>
+					</div>
+		<div class="tile-description">
+		</div>
+				</div>
+	    </div>
+</div>
+</div>
+</div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-abc" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-abc" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</section>
+			<section class="shop-description">
+				<div class="row">
+				<div class="col-sm-12">	
+				<p>Магазин www.tovarovoz.ua является торговым партнером ведущих украинских дистрибьюторов оргтехники и специального оборудования. На сайте магазина представлена обширная база современных товаров высокого качества, имеющих гарантию производителя и самые разумные цены. </p>
+				<p>Вы можете выгодно приобрести товары следующих групп: </p>
+				<ul>
+		<li>-  Компьютерная техника и аксессуары от Apple,  Asustek,  Intel, Microsoft, Corsair, Sony, HP.</li>
+		<li>-  Оргтехника и торговое оборудование от HP, Canon, Epson, Panasonic, Symbol, Zebra, Datamax, Magner, Elo. 
+</li>
+		<li>-  Бытовая техника и электроника от Sony, Samsung, Moulinex, Tefal, LG. </li>
+				</ul>
+			<p>Кроме того на сайте представлены ряд новых для компании товарных групп, таких как:</p>
+			<ul>
+		<li>-  Автомобильные запчасти от Federal Mogul, Lemforder, Bosh, Denso, NGK, Osram, Mann, Mahle, KYВ; масла Castrol, Shell.</li>
+			</ul>
+<p>Условия по этим группам уже сейчас высококонкурентны и станут еще выгоднее.</p>
+			<p>Если Вы, все же, не найдете нужный товар в списке наших предложений - обращайтесь к менеджерам магазина, мы постараемся найти его для Вас, используя наш опыт и связи. Мы небольшой, поэтому гибкий и клиент-ориентированный магазин!</p>
+			<p>Мы надеемся, что посетив наш магазин Вы останетесь довольны качеством обслуживания.</p>
+			<p>Для нас это важно! </p>
+			</div>
+	</div>
+
+	</section>
+	</div>
+</main>
+<div id="popup">
+		<div class="popup-product">
+		<h2>Корзина</h2>
+		<a href="" class="big-cross"></a>
+			<div class="product-wrap">
+				<ul class="product-list scrolling">
+					<li class="product-list-item">
+						<div class="row line">
+				<a href="" class="small-cross"></a>
+				<div class="col-sm-2"><a href="" class="product-image"><img src="img/contact-img.jpg" alt=""></a></div>
+				<div class="col-sm-10" class="product-column">
+					<div class="row">
+						<div class="col-sm-6"><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a>
+						</div>
+						<div class="col-sm-3 product-count-list">
+						<form method="post" action="">
+						<div class="btn-product add-product"></div>
+						<div class="count-in"><input type="text" readonly name="count[]" value ="1"></div>
+						<div class="btn-product minus-product"></div>
+						</form>
+						</div>
+						<div class="col-sm-3"><span class="sum">13 948 грн.</span></div>
+					</div>
+				</div>
+						</div>
+					</li>
+				</ul>
+		</div>
+			<div class="row">
+				<div class="col-sm-6"><div class="continue"><a href="kategory.html" >Продолжить покупки</a></div></div>
+				<div class="col-sm-6 total-sum">Итого: &nbsp; &nbsp; <span class="all-sum">13 948 грн.</span></div>
+			</div>
+			<button class="yellow-button" id="make-order-popup" onclick="location.href='delivery-payment-1.html'">Оформить заказ</button>
+		</div>
+</div>
+<footer>
+	<div class="container">
+	<div class="row">
+		<div class="col-xs-6 col-sm-3">Дружественный интернет-магазин<br>
+<b>TOVAROVOZ.UA</b></div>
+		<div class="col-xs-6 col-sm-3"><span class="size">044 232-91-55, </span> <br>
+г. Киев, Васильковская 1, офис №2 </div>
+<div class="col-sm-3 schedule">График работы TOVAROVOZ:<br>
+с Пн по Пт-  с 10:00 до 18:00<br>
+Суббота и Воскресенье - выходные дни
+</div>
+<div class="col-sm-3 social">TOVAROVOZ  в соцсетях: <a href="#"><img src="img/vk-icon.png" alt=""></a></div>
+	</div>
+	</div>
+</footer>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/custom.js"></script>
+</body>
+</html>

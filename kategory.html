@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tovarovoz</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<link href="stylesheets/styles.css" type="text/css" rel="stylesheet" >
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default">
+  <div class="container">
+  	<div class="row">
+	<div class="col-xs-12 col-sm-4 col-lg-3 no-padding-right">
+		<div class="row">
+	<div class="col-xs-6 col-sm-12">
+		<a class="navbar-brand" href="index.html">
+		<img src="img/logo.png" alt="" class="hidden-xs">
+		<img src="img/logo-sm.png" alt="" class="visible-xs">
+		</a>
+	</div>
+	<div class="col-xs-6">
+	<div class="basket-area-small">
+		<div class="basket empty">
+			<span class="cart-price" id="cartPrice-no-items">Корзина пуста</span>
+		</div>
+		<div class="basket full">
+			<span class="cart-price" id="cartPrice-items">В корзине <span class="product-count">1 </span>товар </span>
+		</div>
+			<div class="order">
+				<p><span class="product-count">1 </span>товар  на сумму &nbsp; &nbsp; <span class="sum">13 948 грн</span></p>
+				<button onclick="location.href='delivery-payment-1.html'" class="make-order">Оформить заказ</button>
+			</div>	
+	</div>
+	</div>
+</div>
+</div>
+	<div class="col-xs-12 col-sm-7 col-sm-offset-1 col-lg-7 col-lg-offset-2">
+		<div class="navbar-contacts">
+    	<div class="telephone">044 232-91-55</div>
+		<div class="address">г.Киев, ул.Васильковская 1, оф.2</div>
+		<div class="lang">
+			<a href="">укр</a>|
+			<a href="" class="active">рус</a>|
+			<a href="">eng</a>
+		</div>
+	</div>
+	<div class="search-small">
+		<form action="action_page.php" method="GET" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<input type="search" name="somesearch" placeholder="Поиск">
+  		<input type="submit" value="Найти">
+		</form>
+	</div>
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tog-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+	<div class="visible-xs sm-panel">
+      	<div class="row">
+      		<div class="col-xs-2 panel-arrow"><a href="index.html"></a></div>
+      		<div class="col-xs-6 panel-title">Планшеты</div>
+      		<div class="col-xs-4 panel-filter"><a href="">Фильтр</a></div>
+      	</div>
+    </div>
+		
+	<div class="collapse navbar-collapse" id="tog-menu">
+      	<ul class="nav navbar-nav">
+        	<li><a href="about.html">О нас</a></li>
+        	<li><a href="#">Доставка</a></li>
+        	<li><a href="#">Оплата</a></li>
+        	<li><a href="#support">Поддержка</a></li>
+        	<li><a href="#contacts">Контакты</a></li>
+        	<li><a href="#cabinet">Личный кабинет</a></li>
+		</ul>
+		<a href="" class="cross">X</a>
+	</div>
+	</div>
+	</div>
+  	</div>
+	</nav>
+</header>
+<main>
+<div class="container">
+	<section id="two-column">
+		<div class="row">
+	<aside id="widget-area" class="col-sm-3">
+		<div class="catalog">
+			<ul class="catalog-list">
+				<li class="dropdown list-head-2"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Каталог товаров</a>
+					<ul class="dropdown-menu first-level">
+				<li class="dropdown active"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Компьютерная и офисная техника</a>
+					<div class="advertise-wrap">
+					<span class="advertise"><img src="img/tablet-big.png" alt=""></span>
+					<ul class="dropdown-menu second-level">
+						<li><a href="">Мини-ПК и тонкие клиенты <span class="caret-right"></span></a></li>
+						<li><a href="">Настольные ПК</a></li>
+						<li><a href="">Аксессуары для ПК<span class="caret-right"></span></a></li>
+						<li><a href="">Комплектующие<span class="caret-right"></span></a></li>
+						<li><a href="">Ноутбуки, нетбуки и аксессуары</a></li>
+						<li class="dropdown dropdown-submenu active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Планшеты и аксессуары<span class="caret-right"></span></a>
+							<ul class="dropdown-menu third-level">
+								<li class="active"><a href="">Планшеты</a></li>
+								<li><a href="">Аксессуары для планшетов</a></li>
+							</ul>
+						</li>
+						<li><a href="">Электронные книги</a></li>
+						<li><a href="">Мультимедиа<span class="caret-right"></span></a></li>
+						<li><a href="">Сумки и чехлы<span class="caret-right"></span></a></li>
+						<li><a href="">Серверное оборудование и СХД<span class="caret-right"></span></a></li>
+						<li><a href="">Внешние диски и флеш-накопители<span class="caret-right"></span></a></li>
+						<li><a href="">Принтеры, сканеры, факсы и МФУ<span class="caret-right"></span></a></li>
+						<li><a href="">Сетевое оборудование<span class="caret-right"></span></a></li>
+						<li><a href="">Мониторы</a></li>
+					</ul>
+					<a href="" class="advertise-link"></a>
+				</div>
+				</li>
+				<li><a href="">Торговое оборудование</a></li>
+				<li><a href="">Бытовая техника</a></li>
+				<li><a href="">Телефония</a></li>
+				<li><a href="">Программное обеспечение</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="filter-title"><h3>Фильтры</h3></div>
+		<div class="filter">			
+		<div class="filter-price">
+		<form>
+			<p>Цена (грн)</p>
+			<p>от <input type="text" class="sliderValue" data-index="0" > до <input type="text" class="sliderValue" data-index="1" > <span class="btn-custom"> <input type="submit" id="ok" value="OK"></span></p>
+			<div id="slider"></div>
+		</form>
+		</div>
+		<div class="producer">
+			<p>Производитель</p>
+				<form action="">
+					<input type="checkbox" name="producer" value="apple">Apple<br>
+					<input type="checkbox" name="producer" value="acer">Acer<br>
+					<input type="checkbox" name="producer" value="lenovo">Lenovo<br>
+					<input type="checkbox" name="producer" value="microsoft">Microsoft<br>
+					<input type="checkbox" name="producer" value="samsung">Samsung<br>
+				</form>
+		</div>
+		<div class="color">
+			<p>Цвет</p>
+			<div class="container">
+			<div class="row">
+				<form action="">
+				<div class="col-sm-6 left">
+					<input type="checkbox" name="color" value="white">белый<br>
+					<input type="checkbox" name="color" value="blue">синий<br>
+					<input type="checkbox" name="color" value="black">черный<br>
+				</div>
+				<div class="col-sm-6 right">	
+					<input type="checkbox" name="color" value="gold">золотой<br>
+					<input type="checkbox" name="color" value="silver">серебристый<br>
+				</div>
+				</form>
+				</div>
+				</div>
+		</div>
+		</div>
+		</aside>
+	<section id="content" class="col-xs-12 col-sm-9">
+<div class="secondary-widget-area">
+	<div class="search">
+		<form action="action_page.php" method="GET" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<input type="search" name="somesearch" placeholder="Поиск">
+  		<input type="submit" value="Найти">
+		</form>
+	</div>
+	<div class="basket-area">
+		<a href="#" target="_self" class="basket empty">
+			<span class="cart-price" id="cartPrice-no-items">Корзина пуста</span>
+		</a>
+		<a href="#" target="_self" class="basket full">
+			<span class="cart-price" id="cartPrice-items">В корзине <span class="product-count">1 </span><span class="text-to-change">товар </span></span></a>
+			<div class="order">
+				<p><span class="text-to-change-2">Один товар </span> на сумму &nbsp; &nbsp; &nbsp; <span class="sum">13 948 грн</span></p>
+				<button class="make-order" onclick="location.href='delivery-payment-1.html'">Оформить заказ</button>
+			</div>	
+		
+	</div>
+</div>
+<div class="breadcrumbs">
+	<ul>
+		<li><a href="">Главная</a></li>
+		<li><a href="">Компьютерная и офисная техника</a></li>
+		<li><a href="">Планшеты и аксессуары</a></li>
+		<li><a href="">Планшеты</a></li>
+	</ul>
+</div>
+<section class="tablets">
+<div class="filter_div controls">
+<div class="table-responsive">          
+  <table class="table">
+    <tr>
+        <td class="price-day" id="category-1">Цена дня</td>
+        <td class="new-one" id="category-2">Новинка</td>
+        <td class="action" id="category-3">Акция</td>
+        <td class="big-sale" id="category-4">BIG SALE</td>
+        <td class="super-price" id="category-5">Суперцена</td>
+        <td class="free-delivery" id="category-6">Доставка бесплатно</td>
+        <td class="week-product" id="category-7">Товар недели</td>
+        <td class="moment" id="category-8">Лови момент</td>
+    </tr>
+  </table>
+  </div>
+  </div>
+<h3>Планшеты</h3>
+<div class="row">
+	<div class="tablet-grid">
+	<div class="col-xs-12 col-sm-3 tablet acer white" data-price="22 130">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-a.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Acer Switch10 SW5-012</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">22 130</span>грн</span><span class="price-img-2">Купить</span></button>
+			</div>
+		</div>	
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-3 apple white" data-price="13 948">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-action">Акция!</div>
+			<div class="tile-img"><a href="product.html"><img src="img/tablet-b.jpg" alt=""></a></div>
+			<div class="tile-title"><a href="product.html">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">13 948</span>грн</span><span class="price-img-2">Купить</span></button>
+			</div>
+		</div>	
+		<div class="tile-description">
+			<p>Планшет Apple A1489 iPadAir with Retina display Wi-Fi 32GB Silver; Процессор: мощный Dual-core Apple A7 с 64-битной архитектурой и сопроцессор движения М7. Память: 16ГБ</p>
+		</div>
+		
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet acer white" data-price="5 130">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-c.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Acer Iconia Tab A211 (HT.HA8EE.002)</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">5 130</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-4 lenovo silver" data-price="10 837">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-big">Big Sale</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-d.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Lenovo IdeaTab Yoga Tablet 2-1050F 10.1</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">10 837</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-8 samsung white" data-price="9 096">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-moment">Лови момент</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-e.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Samsung Galaxy Tab 4 T531 10.1"/1.5Gb</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">9 096</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet microsoft black" data-price="18 345">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-f.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Microsoft Surface чехлом Touch Cover</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">18 345</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet apple black" data-price="11 067">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-g.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Apple iPad Air Wi-Fi 16GB Space Gray (MD785TUA)</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">11 067</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-1 microsoft black" data-price="6 439">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-day">Цена дня</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-h.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Microsoft Surface RT 32Gb</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">6 439</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet acer silver" data-price="22 130">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-a.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Acer Switch10 SW5-012</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">22 130</span>грн</span><span class="price-img-2">Купить</span></button>
+			</div>
+		</div>	
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-3 apple white" data-price="13 948">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-action">Акция!</div>
+			<div class="tile-img"><a href=""><img src="img/tablet-b.jpg" alt=""></a></div>
+			<div class="tile-title"><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">13 948</span>грн</span><span class="price-img-2">Купить</span></button>
+			</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-5 acer white" data-price="5 130">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-super">Суперцена</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-c.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Acer Iconia Tab A211 (HT.HA8EE.002)</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">5 130</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-7 lenovo silver" data-price="10 837">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-week">Товар недели</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-d.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Lenovo IdeaTab Yoga Tablet 2-1050F 10.1</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">10 837</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet samsung white" data-price="9 096">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-e.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Samsung Galaxy Tab 4 T531 10.1"/1.5Gb</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">9 096</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-3 microsoft black" data-price="18 345">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label action-2">Акция</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-f.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Microsoft Surface чехлом Touch Cover</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">18 345</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet apple black" data-price="11 067">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label"></div>
+		<div class="tile-img"><a href=""><img src="img/tablet-g.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Apple iPad Air Wi-Fi 16GB Space Gray (MD785TUA)</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">11 067</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-3 tablet category-6 microsoft black" data-price="6 439">
+		<div class="large-tile">
+			<div class="middle-tile">
+		<div class="tile-data"> 
+		<div class="label label-delivery">Бесплатная доставка</div>
+		<div class="tile-img"><a href=""><img src="img/tablet-h.jpg" alt=""></a></div>
+		<div class="tile-title"><a href="">Планшет Microsoft Surface RT 32Gb</a></div>
+		</div>
+		<button class="btn price"><span class="sum-2"><span class="cap">6 439</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="tile-description">
+			
+		</div>
+	</div>
+	</div>
+</div>
+</section>
+	<div class="row">
+		<div class="col-sm-12 hidden-xs">
+<nav class="pager">
+  <ul class="pagination">
+    <li>
+      <a href="#" class="left-arrow" aria-label="Previous">
+        <span aria-hidden="true"></span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li class="active"><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span>...</span></a></li>
+    <li><a href="#">10</a></li>
+    <li>
+      <a href="#" class="right-arrow" aria-label="Next">
+        <span aria-hidden="true"></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+
+<section class="tablets-small visible-xs padding">
+		<div class="row">
+			<div class="col-xs-4"><a href="product.html"><img src="img/tablet-b.jpg" alt=""></a></div>
+			<div class="col-xs-8">
+				<div class="ts-title"><a href="product.html">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a></div>
+				<div class="ts-description"><a href="">Планшет Apple A1489 iPadAir with Retina display Wi-Fi 32GB Silver; Процессор: мощный Dual-core Apple A7 с 64-битной архитектурой и сопроцессор движения М7. Память: 16ГБ</a></div>
+				<div class="ts-availability available">Есть в наличии</div>
+				<button class="btn price"><span class="sum-2"><span class="cap">13 948</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4"><a href=""><img src="img/tablet-e.jpg" alt=""></a></div>
+			<div class="col-xs-8">
+				<div class="ts-title"><a href="">Планшет Samsung Galaxy Tab 4 T531 10.1"/1.5Gb</a></div>
+				<div class="ts-description"><a href="">Samsung Galaxy Tab 4 T531 10.1/1.5Gb; Процессор: мощный Dual-core Apple A7 с 64-битнойархитектурой и ...</a></div>
+				<div class="ts-availability not-available">Нет в наличии</div>
+				<button class="btn price"><span class="sum-2"><span class="cap">7 799</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4"><a href=""><img src="img/tablet-b.jpg" alt=""></a></div>
+			<div class="col-xs-8">
+				<div class="ts-title"><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a></div>
+				<div class="ts-description"><a href="">Планшет Apple A1489 iPadAir with Retina display Wi-Fi 32GB Silver; Процессор: мощный Dual-core Apple A7 с 64-битной архитектурой и сопроцессор движения М7. Память: 16ГБ</a></div>
+				<div class="ts-availability available">Есть в наличии</div>
+				<button class="btn price"><span class="sum-2"><span class="cap">13 948</span>грн</span><span class="price-img-2">Купить</span></button>
+		</div>
+		</div>
+		<div class="ts-nav">
+			<p>Показано 3 модели из 15</p>
+			<button class="ts-more">Еще 3 модели</button>
+		</div>
+	</section>
+<section class="shop-description">
+				<div class="row">
+				<div class="col-sm-12">	
+				<p>Магазин www.tovarovoz.ua является торговым партнером ведущих украинских дистрибьюторов оргтехники и специального оборудования. На сайте магазина представлена обширная база современных товаров высокого качества, имеющих гарантию производителя и самые разумные цены. Вы можете выгодно приобрести товары следующих групп: </p>
+				<ul>
+		<li>-  Компьютерная техника и аксессуары от Apple,  Asustek,  Intel, Microsoft, Corsair, Sony, HP.</li>
+		<li>-  Оргтехника и торговое оборудование от HP, Canon, Epson, Panasonic, Symbol, Zebra, Datamax, Magner, Elo. 
+</li>
+		<li>-  Бытовая техника и электроника от Sony, Samsung, Moulinex, Tefal, LG. </li>
+				</ul>
+			<p>Кроме того на сайте представлены ряд новых для компании товарных групп, таких как:</p>
+			<ul>
+		<li>-  Автомобильные запчасти от Federal Mogul, Lemforder, Bosh, Denso, NGK, Osram, Mann, Mahle, KYВ; масла Castrol, Shell.</li>
+			</ul>
+<p>Условия по этим группам уже сейчас высококонкурентны и станут еще выгоднее.</p>
+			<p>Если Вы, все же, не найдете нужный товар в списке наших предложений - обращайтесь к менеджерам магазина, мы постараемся найти его для Вас, используя наш опыт и связи. Мы небольшой, поэтому гибкий и клиент-ориентированный магазин!</p>
+			<p>Мы надеемся, что посетив наш магазин Вы останетесь довольны качеством обслуживания.</p>
+			<p>Для нас это важно! </p>
+			</div>
+	</div>
+</section>
+	</section>
+	</div>
+	</section>
+</div>
+</main>
+<div id="popup">
+		<div class="popup-product">
+		<h2>Корзина</h2>
+		<a href="" class="big-cross"></a>
+			<div class="product-wrap">
+				<ul class="product-list scrolling">
+					<li class="product-list-item">
+						<div class="row line">
+				<a href="" class="small-cross"></a>
+				<div class="col-sm-2"><a href="" class="product-image"><img src="img/contact-img.jpg" alt=""></a></div>
+				<div class="col-sm-10" class="product-column">
+					<div class="row">
+						<div class="col-sm-6"><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a>
+						</div>
+						<div class="col-sm-3 product-count-list">
+						<form method="post" action="">
+						<div class="btn-product add-product"></div>
+						<div class="count-in"><input type="text" readonly name="count[]" value ="1"></div>
+						<div class="btn-product minus-product"></div>
+						</form>
+						</div>
+						<div class="col-sm-3"><span class="sum">13 948 грн.</span></div>
+					</div>
+				</div>
+						</div>
+					</li>
+				</ul>
+		</div>
+			<div class="row">
+				<div class="col-sm-6"><div class="continue"><a href="kategory.html" >Продолжить покупки</a></div></div>
+				<div class="col-sm-6 total-sum">Итого: &nbsp; &nbsp; <span class="all-sum">13 948 грн.</span></div>
+			</div>
+			<button class="yellow-button" id="make-order-popup" onclick="location.href='delivery-payment-1.html'">Оформить заказ</button>
+		</div>
+</div>
+<footer>
+	<div class="container">
+	<div class="row">
+	<div class="col-xs-6 col-sm-3">Дружественный интернет-магазин<br>
+	<b>TOVAROVOZ.UA</b></div>
+	<div class="col-xs-6 col-sm-3"><span class="size">044 232-91-55, </span><br>
+	г. Киев, Васильковская 1, офис №2 </div>
+	<div class="col-sm-3 schedule">График работы TOVAROVOZ:<br>
+	с Пн по Пт-  с 10:00 до 18:00<br>
+	Суббота и Воскресенье - выходные дни
+	</div>
+	<div class="col-sm-3 social">TOVAROVOZ  в соцсетях: <a href="#"><img src="img/vk-icon.png" alt=""></a></div>
+	</div>
+	</div>
+</footer>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/custom.js"></script>
+</body>
+</html>

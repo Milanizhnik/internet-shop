@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tovarovoz</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="stylesheets/styles.css" type="text/css" rel="stylesheet" >
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default">
+  <div class="container">
+  	<div class="row">
+	<div class="col-xs-12 col-sm-4 col-lg-3 no-padding-right">
+<div class="row">
+	<div class="col-xs-6 col-sm-12">
+		<a class="navbar-brand" href="index.html">
+		<img src="img/logo.png" alt="" class="hidden-xs">
+		<img src="img/logo-sm.png" alt="" class="visible-xs">
+		</a>
+	</div>
+	<div class="col-xs-6">
+		<div class="basket-area-small">
+		<a href="/cart" target="_self" class="basket empty">
+			<span class="cart-price" id="cartPrice-no-items">Корзина пуста</span>
+		</a>
+		<a href="/cart" target="_self" class="basket full">
+			<span class="cart-price" id="cartPrice-items">В корзине <span class="product-count">1 </span><span class="text-to-change">товар </span></span></a>
+			<div class="order">
+				<p><span class="text-to-change-2">Один товар </span> на сумму &nbsp; &nbsp; &nbsp; <span class="sum">13 948 грн</span></p>
+				<button class="make-order">Оформить заказ</button>
+			</div>	
+	</div>
+	</div>
+</div>
+</div>
+	<div class="col-xs-12 col-sm-7 col-sm-offset-1 col-lg-7 col-lg-offset-2">
+		<div class="navbar-contacts">
+    	<div class="telephone">044 232-91-55</div>
+		<div class="address">г.Киев, ул.Васильковская 1, оф.2</div>
+		<div class="lang">
+			<a href="">укр</a>|
+			<a href="" class="active">рус</a>|
+			<a href="">eng</a>
+		</div>
+	</div>
+	<div class="search-small">
+		<form action="action_page.php" method="GET" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<input type="search" name="somesearch" placeholder="Поиск">
+  		<input type="submit" value="Найти">
+		</form>
+	</div>
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tog-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+	<div class="visible-xs sm-panel">
+      	<div class="row">
+      		<div class="col-xs-2 panel-arrow"><a href="" ></a></div>
+      		<div class="col-xs-10 panel-title">Корзина</div>
+      	</div>
+    </div>
+		
+	<div class="collapse navbar-collapse" id="tog-menu">
+      	<ul class="nav navbar-nav">
+        	<li><a href="about.html">О нас</a></li>
+        	<li><a href="">Доставка</a></li>
+        	<li><a href="">Оплата</a></li>
+        	<li><a href="#support">Поддержка</a></li>
+        	<li><a href="#contacts">Контакты</a></li>
+        	<li><a href="#cabinet">Личный кабинет</a></li>
+		</ul>
+		<a href="" class="cross">X</a>
+	</div>
+	</div>
+	</div>
+  	</div>
+	</nav>
+</header>
+<main>
+	<div class="container">
+		<section id="two-column">
+		<div class="row">
+	<aside id="widget-area" class="col-sm-3">
+		<div class="catalog">
+			<ul class="catalog-list">
+				<li class="dropdown list-head-2"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
+					<ul class="dropdown-menu first-level">
+				<li class="dropdown active"><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Компьютерная и офисная техника</a>
+					<div class="advertise-wrap">
+					<span class="advertise"><img src="img/tablet-big.png" alt=""></span>
+					<ul class="dropdown-menu second-level">
+						<li><a href="">Мини-ПК и тонкие клиенты <span class="caret-right"></span></a></li>
+						<li><a href="">Настольные ПК</a></li>
+						<li><a href="">Аксессуары для ПК<span class="caret-right"></span></a></li>
+						<li><a href="">Комплектующие<span class="caret-right"></span></a></li>
+						<li><a href="">Ноутбуки, нетбуки и аксессуары</a></li>
+						<li class="dropdown dropdown-submenu active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Планшеты и аксессуары<span class="caret-right"></span></a>
+							<ul class="dropdown-menu third-level">
+								<li class="active"><a href="kategory.html">Планшеты</a></li>
+								<li><a href="">Аксессуары для планшетов</a></li>
+							</ul>
+						</li>
+						<li><a href="">Электронные книги</a></li>
+						<li><a href="">Мультимедиа<span class="caret-right"></span></a></li>
+						<li><a href="">Сумки и чехлы<span class="caret-right"></span></a></li>
+						<li><a href="">Серверное оборудование и СХД<span class="caret-right"></span></a></li>
+						<li><a href="">Внешние диски и флеш-накопители<span class="caret-right"></span></a></li>
+						<li><a href="">Принтеры, сканеры, факсы и МФУ<span class="caret-right"></span></a></li>
+						<li><a href="">Сетевое оборудование<span class="caret-right"></span></a></li>
+						<li><a href="">Мониторы</a></li>
+					</ul>
+				</div>
+				</li>
+				<li><a href="">Торговое оборудование</a></li>
+				<li><a href="">Бытовая техника</a></li>
+				<li><a href="">Телефония</a></li>
+				<li><a href="">Программное обеспечение</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+		</aside>
+<section id="content" class="col-xs-12 col-sm-9">
+<div class="secondary-widget-area">
+	<div class="search">
+		<form action="action_page.php" method="GET" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		<input type="search" name="somesearch" placeholder="Поиск">
+  		<input type="submit" value="Найти">
+		</form>
+	</div>
+		<div class="basket-area">
+		<a href="/cart" target="_self" class="basket empty">
+			<span class="cart-price" id="cartPrice-no-items">Корзина пуста</span>
+		</a>
+		<a href="/cart" target="_self" class="basket full">
+			<span class="cart-price" id="cartPrice-items">В корзине <span class="product-count">1 </span><span class="text-to-change">товар </span></span></a>
+			<div class="order">
+				<p><span class="text-to-change-2">Один товар </span> на сумму &nbsp; &nbsp; &nbsp; <span class="sum">13 948 грн</span></p>
+				<button class="make-order">Оформить заказ</button>
+			</div>	
+		
+	</div>
+</div>
+</section>
+</div>
+</section>
+<section class="contact-order">
+	<h2>Оформление заказа</h2>
+	<div class="row">
+		<div class="col-sm-5">
+				<article class="contact-data no-line">
+				<div class="contact-title">
+				1. Контактные данные <a href="" class="edit">Редактировать</a>
+        		</div>
+        		<div class="contact-choice">
+        			<div class="row">
+        			<div class="col-sm-6"><a href="" class="customer active">Я новый покупатель</a></div>
+        			<div class="col-sm-6"><a href="" class="customer">Я постоянный покупатель</a></div>
+        			</div>
+        		</div>
+        		<div class="contact-form">
+        			<form action="" method="post">
+        			<div class="row">
+        				<div class="col-sm-4"><label for="surname">Имя  и Фамилия </label></div>
+        				<div class="col-sm-8"><input type="text" id="surname" name="surname"></div>
+        			</div>
+        			<div class="row">
+        				<div class="col-sm-4"><label for="mobile">Мобильный телефон </label></div>
+        				<div class="col-sm-8"><input type="tel" id="mobile" name="mobile"></div>
+        			</div>
+        			<div class="row">
+        				<div class="col-sm-4"><label for="mail">Электронная почта </label></div>
+        				<div class="col-sm-8"><input type="email" id="mail" name="mail">
+        					<span class="mail-condition">Если вы хотите следить за статусом выполнения заказа</span>
+        				</div>
+        			</div>
+					</form>
+					<button class="yellow-button" id="more" onclick="window.location.href='delivery-payment-2.html'">Далее</button>
+        		</div>
+				</article>			
+		</div>
+		<div class="col-sm-6 col-sm-offset-1">
+			<div class="order-resume">
+			<div class="row line">
+				<div class="col-sm-3"><img src="img/contact-img.jpg" alt=""></div>
+				<div class="col-sm-5 no-padding-right no-padding-left"><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a></div>
+				<div class="col-sm-1 no-padding-right no-padding-left"><span class="product-count">1 шт.</span></div>
+				<div class="col-sm-3 order-resume-price"><span class="sum">13 948 грн.</span></div>
+			</div>
+				<div class="row">
+				<div class="col-sm-6 edit-order"><a href="">Редактировать заказ</a></div>
+				<div class="col-sm-6 total-sum">Итого: <span class="all-sum">13 948 грн.</span></div>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="order-resume-small visible-xs">
+	<div class="order-resume">
+			<div class="row line order-resume-inner">
+				<a class="resume-cross" href=""></a>
+				<div class="col-xs-3"><img src="img/contact-img.jpg" alt=""></div>
+				<div class="col-xs-9">
+					<div class="row">
+						<div class="col-xs-12"><div><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a></div>
+						<div class="product-code">Код товара: 106038</div>
+						</div>
+					</div>
+					<div class="row">
+					<div class="col-xs-4"><span class="one-sum">13 948 грн.</span></div>
+					<div class="col-xs-4 product-count-list">
+						<form method="post" action="">
+						<div class="btn-product add-product"></div>
+						<div class="count-in"><input type="text" readonly name="count[]" value ="1"></div>
+						<div class="btn-product minus-product"></div>
+						</form>
+					</div>
+					<div class="col-xs-4"><span class="sum">13 948 грн.</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-6 total-sum">Итого: <span class="all-sum">13 948 грн.</span></div>
+			</div>
+			<button class="yellow-button" id="make-order" onclick="location.href='oformlenie-zakaza-step-1-sm.html';">Оформить заказ</button>
+			<div class="continue"><a href="" >Продолжить покупки</a></div>
+		</div>
+</section>
+
+</div>
+</main>
+<div id="popup">
+		<div class="popup-product">
+		<h2>Корзина</h2>
+		<a href="" class="big-cross"></a>
+			<div class="product-wrap">
+				<ul class="product-list scrolling">
+					<li class="product-list-item">
+						<div class="row line">
+				<a href="" class="small-cross"></a>
+				<div class="col-sm-2"><a href="" class="product-image"><img src="img/contact-img.jpg" alt=""></a></div>
+				<div class="col-sm-10" class="product-column">
+					<div class="row">
+						<div class="col-sm-6"><a href="">Планшет Apple iPad Air Wi-Fi 32GB Silver (MD785TUA)</a>
+						</div>
+						<div class="col-sm-3 product-count-list">
+						<form method="post" action="">
+						<div class="btn-product add-product"></div>
+						<div class="count-in"><input type="text" readonly name="count[]" value ="1"></div>
+						<div class="btn-product minus-product"></div>
+						</form>
+						</div>
+						<div class="col-sm-3"><span class="sum">13 948 грн.</span></div>
+					</div>
+				</div>
+						</div>
+					</li>
+				</ul>
+		</div>
+			<div class="row">
+				<div class="col-sm-6"><div class="continue"><a href="kategory.html" >Продолжить покупки</a></div></div>
+				<div class="col-sm-6 total-sum">Итого: &nbsp; &nbsp; <span class="all-sum">13 948 грн.</span></div>
+			</div>
+			<button class="yellow-button" id="make-order-popup" onclick="location.href='delivery-payment-1.html'">Оформить заказ</button>
+		</div>
+</div>
+<footer>
+	<div class="container">
+	<div class="row">
+	<div class="col-xs-6 col-sm-3">Дружественный интернет-магазин<br>
+	<b>TOVAROVOZ.UA</b></div>
+	<div class="col-xs-6 col-sm-3"><span class="size">044 232-91-55, </span> <br>
+	г. Киев, Васильковская 1, офис №2 </div>
+	<div class="col-sm-3 schedule">График работы TOVAROVOZ:<br>
+	с Пн по Пт-  с 10:00 до 18:00<br>
+	Суббота и Воскресенье - выходные дни
+	</div>
+	<div class="col-sm-3 social">TOVAROVOZ  в соцсетях: <a href="#"><img src="img/vk-icon.png" alt=""></a></div>
+	</div>
+	</div>
+</footer>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+<script src="javascripts/bootstrap.min.js"></script>
+<script src="javascripts/custom.js"></script>
+</body>
+</html>
